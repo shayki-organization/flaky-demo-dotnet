@@ -1,0 +1,19 @@
+CalcTests.cs
+  s_2b4d4531607f43::t_36fa59b47f04c0 39-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bd63d40c268c16ff13e0572168a508c2bf86771c",
+  "prompts": {},
+  "sessions": {
+    "s_2b4d4531607f43": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "stealth-giraffe",
+        "model": "unknown"
+      },
+      "human_author": "Shayki Abramczyk <shayki5@gmail.com>"
+    }
+  }
+}
