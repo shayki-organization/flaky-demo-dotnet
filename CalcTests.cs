@@ -37,6 +37,16 @@ namespace FlakyDemo.Tests
         }
 
         [Fact]
+        public void FlakyFailsOnFirstAttemptOnly()
+        {
+            if (Environment.GetEnvironmentVariable("GITHUB_RUN_ATTEMPT") == "1")
+            {
+                Assert.Fail("flaky: simulated first-attempt failure (GITHUB_RUN_ATTEMPT=1)");
+            }
+            Assert.Equal(2, Calc.Add(1, 1));
+        }
+
+        [Fact]
         public void FlakyMultipliesUnderContention()
         {
             if (Rng.NextDouble() < 0.4)
